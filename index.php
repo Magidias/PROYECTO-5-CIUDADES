@@ -7,18 +7,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <h1>TRES CIUDADES</h1>
-
-        <div id="inf">
-            <ul>
-                <li><a href="#Inicio">INICIO</a></li>
-                <li><a href="#Paris">PARIS</a></li>
-                <li><a href="#Londres">LONDRES</a></li>
-                <li><a href="#Madrid">MADRID</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- NAV -->
+    <?php 
+    include "./php/nav.php"
+    ?>
 
     <header></header>
 
@@ -45,23 +37,17 @@
             </article>
         </section>
 
-        <section id="sect_form">
-            <h2 class="oculto">Contacta con nosotros</h2>
-            <article>
-                <form action="./php/enviar.php">
-                    <h3>Contacta con nosotros</h3>
-                    <input type="text" name="nombre" placeholder="Nombre*">
-                    <input type="tel" name="telefono" placeholder="Teléfono*">
-                    <input type="email" name="email" placeholder="Correo Electrónico">
-                    <textarea name="mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
-                    <input type="submit" value="Enviar" id="boton">
-                </form>
-            </article>
-        </section>
+        <!-- FORM -->
+        <?php 
+        include "./php/form.php"
+        ?>
+
     </main>
 
-    <footer>
-        <p>Desarrollado por MD</p>
-    </footer>
+    <!-- FOOTER -->
+        <?php 
+        include "./php/footer.php"
+        ?>
+
 </body>
 </html>

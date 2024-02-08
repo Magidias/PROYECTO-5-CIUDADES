@@ -85,9 +85,7 @@ h3{
     font-size: 2rem;
     color: var(--color1);
     font-family: var(--fuente1);
-    width: 100%;
     font-weight: 100;
-
     padding: 1rem;
 
 }
@@ -127,6 +125,7 @@ p{
 
 @media only screen and (min-width:900px){
     p{
+        width: 60%;
         font-size: 18px;
         padding: 2rem;
     }
@@ -245,11 +244,12 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 2rem;
 }
 
-main section h2,h3,p{
+main, section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
